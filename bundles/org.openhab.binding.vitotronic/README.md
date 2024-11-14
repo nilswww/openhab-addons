@@ -21,6 +21,7 @@ For easy using are the main things of a heating system are already define in thi
 - pelletburner (Pellet Fireplace, works for wood also)
 - oilburner (Oil Fireplace)
 - gasburner (Gas Fireplace)
+- heatingpump (Heating Pump)
 - storagetank (Storage Tank, stores heat in a water tank on 3 levels: bottom, middle, top=hot water)
 - circuit (Heating circuit controls the flow between the heating system and the radiators in the rooms)
 - solar (Solar water heating (SWH): Convert sunlight into energy for water heating)

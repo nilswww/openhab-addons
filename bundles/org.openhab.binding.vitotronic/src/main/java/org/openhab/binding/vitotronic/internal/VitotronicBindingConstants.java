@@ -45,6 +45,7 @@ public class VitotronicBindingConstants {
     // List of all Thing Type
     public static final String THING_ID_HEATING = "heating";
     public static final String THING_ID_GASBURNER = "gasburner";
+    public static final String THING_ID_HEATINGPUMP = "heatingpump";
     public static final String THING_ID_PELLETBURNER = "pelletburner";
     public static final String THING_ID_OILBURNER = "oilburner";
     public static final String THING_ID_STORAGETANK = "storagetank";
@@ -58,6 +59,7 @@ public class VitotronicBindingConstants {
     public static final ThingTypeUID THING_TYPE_UID_BRIDGE = new ThingTypeUID(BINDING_ID, BRIDGE_VITOTRONIC);
     public static final ThingTypeUID THING_TYPE_UID_HEATING = new ThingTypeUID(BINDING_ID, THING_ID_HEATING);
     public static final ThingTypeUID THING_TYPE_UID_GASBURNER = new ThingTypeUID(BINDING_ID, THING_ID_GASBURNER);
+    public static final ThingTypeUID THING_TYPE_UID_HEATINGPUMP = new ThingTypeUID(BINDING_ID, THING_ID_HEATINGPUMP);
     public static final ThingTypeUID THING_TYPE_UID_PELLETBURNER = new ThingTypeUID(BINDING_ID, THING_ID_PELLETBURNER);
     public static final ThingTypeUID THING_TYPE_UID_OILBURNER = new ThingTypeUID(BINDING_ID, THING_ID_OILBURNER);
     public static final ThingTypeUID THING_TYPE_UID_STORAGETANK = new ThingTypeUID(BINDING_ID, THING_ID_STORAGETANK);
@@ -68,11 +70,13 @@ public class VitotronicBindingConstants {
     public static final ThingTypeUID THING_TYPE_UID_PUMP = new ThingTypeUID(BINDING_ID, THING_ID_PUMP);
     public static final ThingTypeUID THING_TYPE_UID_VALVE = new ThingTypeUID(BINDING_ID, THING_ID_VALVE);
 
-    public static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Collections.unmodifiableSet(Stream
-            .of(THING_TYPE_UID_BRIDGE, THING_TYPE_UID_GASBURNER, THING_TYPE_UID_HEATING, THING_TYPE_UID_PELLETBURNER,
-                    THING_TYPE_UID_OILBURNER, THING_TYPE_UID_STORAGETANK, THING_TYPE_UID_CIRCUIT, THING_TYPE_UID_SOLAR,
-                    THING_TYPE_UID_TEMPERATURESENSOR, THING_TYPE_UID_PUMP, THING_TYPE_UID_VALVE)
-            .collect(Collectors.toSet()));
+    public static final Set<ThingTypeUID> SUPPORTED_THING_TYPES_UIDS = Collections
+            .unmodifiableSet(Stream
+                    .of(THING_TYPE_UID_BRIDGE, THING_TYPE_UID_GASBURNER, THING_TYPE_UID_HEATINGPUMP,
+                            THING_TYPE_UID_HEATING, THING_TYPE_UID_PELLETBURNER, THING_TYPE_UID_OILBURNER,
+                            THING_TYPE_UID_STORAGETANK, THING_TYPE_UID_CIRCUIT, THING_TYPE_UID_SOLAR,
+                            THING_TYPE_UID_TEMPERATURESENSOR, THING_TYPE_UID_PUMP, THING_TYPE_UID_VALVE)
+                    .collect(Collectors.toSet()));
 
     public static final Set<ThingTypeUID> SUPPORTED_BRIDGE_THING_TYPES_UIDS = Set.of(THING_TYPE_UID_BRIDGE);
 }

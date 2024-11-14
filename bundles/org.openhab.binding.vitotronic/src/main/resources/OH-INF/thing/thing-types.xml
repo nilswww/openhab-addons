@@ -37,6 +37,85 @@
 		</channels>
 	</thing-type>
 
+	<thing-type id="heatingpump">
+		<supported-bridge-type-refs>
+			<bridge-type-ref id="bridge"/>
+		</supported-bridge-type-refs>
+
+		<label>Heating Pump</label>
+		<description>Heating Pump Air Water</description>
+
+		<channels>
+			<channel id="Betriebsstunden_Verdichter" typeId="Betriebsstunden_Verdichter"/>
+			<channel id="Betriebsstunden_Heizkreis" typeId="Betriebsstunden_Heizkreis"/>
+			<channel id="Betriebsstunden_Umschaltventil_Heizen_WW" typeId="Betriebsstunden_Umschaltventil_Heizen_WW"/>
+			<channel id="Betriebsstunden_Ladepumpe_Speicher_Warmwasser"
+				typeId="Betriebsstunden_Ladepumpe_Speicher_Warmwasser"/>
+			<channel id="Betriebsstunden_EHeizung_Stufe_1" typeId="Betriebsstunden_EHeizung_Stufe_1"/>
+			<channel id="Betriebsstunden_EHeizung_Stufe_2" typeId="Betriebsstunden_EHeizung_Stufe_2"/>
+
+			<channel id="Energiebilanz_Jahresarbeitszahl" typeId="Energiebilanz_Jahresarbeitszahl"/>
+			<channel id="Energiebilanz_Jahresarbeitszahl_Heizen" typeId="Energiebilanz_Jahresarbeitszahl_Heizen"/>
+			<channel id="Energiebilanz_Jahresarbeitszahl_Warmwasser" typeId="Energiebilanz_Jahresarbeitszahl_Warmwasser"/>
+			<channel id="Energiebilanz_COP_Heizen" typeId="Energiebilanz_COP_Heizen"/>
+			<channel id="Energiebilanz_COP_Warmwasser" typeId="Energiebilanz_COP_Warmwasser"/>
+			<channel id="Energiebilanz_Vorlauftemperatur" typeId="Energiebilanz_Vorlauftemperatur"/>
+			<channel id="Energiebilanz_Rucklauf" typeId="Energiebilanz_Rucklauf"/>
+			<channel id="Energiebilanz_Woche_Heizen_Verbrauch" typeId="Energiebilanz_Woche_Heizen_Verbrauch"/>
+			<channel id="Energiebilanz_Woche_Heizen_Leistung" typeId="Energiebilanz_Woche_Heizen_Leistung"/>
+			<channel id="Energiebilanz_Woche_WW_Verbrauch" typeId="Energiebilanz_Woche_WW_Verbrauch"/>
+			<channel id="Energiebilanz_Woche_WW_Leistung" typeId="Energiebilanz_Woche_WW_Leistung"/>
+			<channel id="Energiebilanz_Jahr_Heizen_Verbrauch" typeId="Energiebilanz_Jahr_Heizen_Verbrauch"/>
+			<channel id="Energiebilanz_Jahr_Heizen_Leistung" typeId="Energiebilanz_Jahr_Heizen_Leistung"/>
+			<channel id="Energiebilanz_Jahr_WW_Verbrauch" typeId="Energiebilanz_Jahr_WW_Verbrauch"/>
+			<channel id="Energiebilanz_Jahr_WW_Leistung" typeId="Energiebilanz_Jahr_WW_Leistung"/>
+
+			<channel id="Einschaltungen_Verdichter" typeId="Einschaltungen_Verdichter"/>
+			<channel id="Einschaltungen_Primarquelle" typeId="Einschaltungen_Primarquelle"/>
+			<channel id="Einschaltungen_Sekundarquelle" typeId="Einschaltungen_Sekundarquelle"/>
+			<channel id="Einschaltungen_EHeizung_Stufe_1" typeId="Einschaltungen_EHeizung_Stufe_1"/>
+			<channel id="Einschaltungen_EHeizung_Stufe_2" typeId="Einschaltungen_EHeizung_Stufe_2"/>
+			<channel id="Einschaltungen_Heizkreis" typeId="Einschaltungen_Heizkreis"/>
+			<channel id="Einschaltungen_Sammelmeldung" typeId="Einschaltungen_Sammelmeldung"/>
+			<channel id="Einschaltungen_Umschaltventil_Heizen_WW" typeId="Einschaltungen_Umschaltventil_Heizen_WW"/>
+			<channel id="Einschaltungen_Ladepumpe_Speicher_Warmwasser"
+				typeId="Einschaltungen_Ladepumpe_Speicher_Warmwasser"/>
+
+			<channel id="Temperatur_Speicher_Heizung" typeId="Temperatur_Speicher_Heizung"/>
+			<channel id="Temperatur_Externer_Warmeerzeuger" typeId="Temperatur_Externer_Warmeerzeuger"/>
+			<channel id="Temperatur_Speicher_Warmwasser" typeId="Temperatur_Speicher_Warmwasser"/>
+			<channel id="Temperatur_Verdampfer" typeId="Temperatur_Verdampfer"/>
+			<channel id="Temperatur_Vorlauf_Sole" typeId="Temperatur_Vorlauf_Sole"/>
+			<channel id="Temperatur_Rucklauf_Sole" typeId="Temperatur_Rucklauf_Sole"/>
+			<channel id="Temperatur_Vorlauf_Anlage" typeId="Temperatur_Vorlauf_Anlage"/>
+			<channel id="Temperatur_Vorlauf_Sekundarkreis" typeId="Temperatur_Vorlauf_Sekundarkreis"/>
+			<channel id="Temperatur_Rucklauf_Sekundarkreis" typeId="Temperatur_Rucklauf_Sekundarkreis"/>
+
+			<channel id="Einstellung_Betriebsart" typeId="Einstellung_Betriebsart"/>
+			<channel id="Einstellung_Raumtemperatur" typeId="Einstellung_Raumtemperatur"/>
+			<channel id="Einstellung_Raumtemperatur_Reduziert" typeId="Einstellung_Raumtemperatur_Reduziert"/>
+			<channel id="Einstellung_Raumtemperatur_Party" typeId="Einstellung_Raumtemperatur_Party"/>
+			<channel id="Einstellung_Heizkennlinie_Niveau" typeId="Einstellung_Heizkennlinie_Niveau"/>
+			<channel id="Einstellung_Heizkennlinie_Steigung" typeId="Einstellung_Heizkennlinie_Steigung"/>
+			<channel id="Einstellung_Temperatur_Warmwasser" typeId="Einstellung_Temperatur_Warmwasser"/>
+			<channel id="Einstellung_Temperatur_Warmwasser_Soll2" typeId="Einstellung_Temperatur_Warmwasser_Soll2"/>
+			<channel id="Einstellung_Anforderung_Warmwasser" typeId="Einstellung_Anforderung_Warmwasser"/>
+			<channel id="Einstellung_Hysterese_Speicher_Heizung" typeId="Einstellung_Hysterese_Speicher_Heizung"/>
+			<channel id="Einstellung_Hysterese_Speicher_Warmwasser" typeId="Einstellung_Hysterese_Speicher_Warmwasser"/>
+
+			<channel id="Status_Verdichter" typeId="Status_Verdichter"/>
+			<channel id="Status_Primarquelle" typeId="Status_Primarquelle"/>
+			<channel id="Status_Sekundarquelle" typeId="Status_Sekundarquelle"/>
+			<channel id="Status_EHeizung_Stufe_1" typeId="Status_EHeizung_Stufe_1"/>
+			<channel id="Status_EHeizung_Stufe_2" typeId="Status_EHeizung_Stufe_2"/>
+			<channel id="Status_Pumpe_Heizkreis" typeId="Status_Pumpe_Heizkreis"/>
+			<channel id="Status_Sammelmeldung" typeId="Status_Sammelmeldung"/>
+			<channel id="Status_Umschaltventil_Heizen_WW" typeId="Status_Umschaltventil_Heizen_WW"/>
+			<channel id="Status_Ladepumpe_Speicher_Warmwasser" typeId="Status_Ladepumpe_Speicher_Warmwasser"/>
+			<channel id="Status_Umkehr_EinAus" typeId="Status_Umkehr_EinAus"/>
+		</channels>
+	</thing-type>
+
 	<thing-type id="pelletburner">
 		<supported-bridge-type-refs>
 			<bridge-type-ref id="bridge"/>
@@ -353,6 +432,429 @@
 		<description>Actual temperature of the exhaust</description>
 		<category>Temperature</category>
 		<state pattern="%.1f °C" readOnly="true"/>
+	</channel-type>
+
+	<!-- Channel Types for Heating Pump -->
+
+	<channel-type id="Betriebsstunden_Verdichter">
+		<item-type>Number</item-type>
+		<label>Betriebsstunden Verdichter</label>
+		<description>Betriebsstunden_Verdichter</description>
+		<state pattern="%.2f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Betriebsstunden_Heizkreis">
+		<item-type>Number</item-type>
+		<label>Betriebsstunden Heizkreis</label>
+		<description>Betriebsstunden Heizkreis</description>
+		<state pattern="%.2f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Betriebsstunden_Umschaltventil_Heizen_WW">
+		<item-type>Number</item-type>
+		<label>Betriebsstunden Umschaltventil</label>
+		<description>Betriebsstunden Umschaltventil Heizen WW</description>
+		<state pattern="%.2f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Betriebsstunden_Ladepumpe_Speicher_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Betriebsstunden Ladepumpe</label>
+		<description>Betriebsstunden Ladepumpe Speicher Warmwasser</description>
+		<state pattern="%.2f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Betriebsstunden_EHeizung_Stufe_1">
+		<item-type>Number</item-type>
+		<label>Betriebsstunden E-Heizung Stufe 1</label>
+		<description>Betriebsstunden E-Heizung Stufe 1</description>
+		<state pattern="%.2f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Betriebsstunden_EHeizung_Stufe_2">
+		<item-type>Number</item-type>
+		<label>Betriebsstunden E-Heizung Stufe 2</label>
+		<description>Betriebsstunden E-Heizung Stufe 2</description>
+		<state pattern="%.2f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Jahresarbeitszahl">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahresarbeitszahl</label>
+		<description>Energiebilanz Jahresarbeitszahl</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Jahresarbeitszahl_Heizen">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahresarbeitszahl Heizen</label>
+		<description>Energiebilanz Jahresarbeitszahl Heizen</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Jahresarbeitszahl_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahresarbeitszahl Warmwasser</label>
+		<description>Energiebilanz Jahresarbeitszahl Warmwasser</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_COP_Heizen">
+		<item-type>Number</item-type>
+		<label>Energiebilanz COP Heizen</label>
+		<description>Energiebilanz COP Heizen</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_COP_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Energiebilanz COP Warmwasser</label>
+		<description>Energiebilanz COP Warmwasser</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Vorlauftemperatur">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Vorlauftemperatur</label>
+		<description>Energiebilanz Vorlauftemperatur</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Rucklauf">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Rücklauf</label>
+		<description>Energiebilanz Rücklauf</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Woche_Heizen_Verbrauch">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Woche Heizen Verbrauch</label>
+		<description>Energiebilanz Woche Heizen Verbrauch</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Woche_Heizen_Leistung">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Woche Heizen Leistung</label>
+		<description>Energiebilanz Woche Heizen Leistung</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Woche_WW_Verbrauch">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Woche WW Verbrauch</label>
+		<description>Energiebilanz Woche WW Verbrauch</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Woche_WW_Leistung">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Woche WW Leistung</label>
+		<description>Energiebilanz Woche WW Leistung</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+
+	<channel-type id="Energiebilanz_Jahr_Heizen_Verbrauch">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahr Heizen Verbrauch</label>
+		<description>Energiebilanz Jahr Heizen Verbrauch</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Jahr_Heizen_Leistung">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahr Heizen Leistung</label>
+		<description>Energiebilanz Jahr Heizen Leistung</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Jahr_WW_Verbrauch">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahr WW Verbrauch</label>
+		<description>Energiebilanz Jahr WW Verbrauch</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Energiebilanz_Jahr_WW_Leistung">
+		<item-type>Number</item-type>
+		<label>Energiebilanz Jahr WW Leistung</label>
+		<description>Energiebilanz Jahr WW Leistung</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Verdichter">
+		<item-type>Switch</item-type>
+		<label>Status Verdichter</label>
+		<description>Status Verdichter</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Primarquelle">
+		<item-type>Switch</item-type>
+		<label>Status Primärquelle</label>
+		<description>Status Primärquelle</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Sekundarquelle">
+		<item-type>Switch</item-type>
+		<label>Status Sekundärquelle</label>
+		<description>Status Sekundärquelle</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_EHeizung_Stufe_1">
+		<item-type>Switch</item-type>
+		<label>Status E-Heizung Stufe 1</label>
+		<description>Status E-Heizung Stufe 1</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_EHeizung_Stufe_2">
+		<item-type>Switch</item-type>
+		<label>Status E-Heizung Stufe 2</label>
+		<description>Status E-Heizung Stufe 2</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Pumpe_Heizkreis">
+		<item-type>Switch</item-type>
+		<label>Status Pumpe Heizkreis</label>
+		<description>Status Pumpe Heizkreis</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Sammelmeldung">
+		<item-type>Switch</item-type>
+		<label>Status Sammelmeldung</label>
+		<description>Status Sammelmeldung</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Umschaltventil_Heizen_WW">
+		<item-type>Switch</item-type>
+		<label>Status Umschaltventil Heizen/WW</label>
+		<description>Status Umschaltventil Heizen/WW</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Ladepumpe_Speicher_Warmwasser">
+		<item-type>Switch</item-type>
+		<label>Status Ladepumpe Speicher Warmwasser</label>
+		<description>Status Ladepumpe Speicher Warmwasser</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Status_Umkehr_EinAus">
+		<item-type>Switch</item-type>
+		<label>Status Umkehr Ein/Aus</label>
+		<description>Status Umkehr Ein/Aus</description>
+		<state readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Betriebsart">
+		<item-type>Number</item-type>
+		<label>Einstellung Betriebsart</label>
+		<description>Einstellung Betriebsart</description>
+		<state pattern="%d" readOnly="false" max="4" min="0" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Raumtemperatur">
+		<item-type>Number</item-type>
+		<label>Einstellung Raumtemperatur</label>
+		<description>Einstellung Raumtemperatur</description>
+		<state pattern="%.1f" readOnly="false" max="30" min="10" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Raumtemperatur_Reduziert">
+		<item-type>Number</item-type>
+		<label>Einstellung Raumtemperatur Reduziert</label>
+		<description>Einstellung Raumtemperatur Reduziert</description>
+		<state pattern="%.1f" readOnly="false" max="30" min="10" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Raumtemperatur_Party">
+		<item-type>Number</item-type>
+		<label>Einstellung Raumtemperatur Party</label>
+		<description>Einstellung Raumtemperatur Party</description>
+		<state pattern="%.1f" readOnly="false" max="30" min="10" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Heizkennlinie_Niveau">
+		<item-type>Number</item-type>
+		<label>Einstellung Heizkennlinie Niveau</label>
+		<description>Einstellung Heizkennlinie Niveau</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Heizkennlinie_Steigung">
+		<item-type>Number</item-type>
+		<label>Einstellung Heizkennlinie Steigung</label>
+		<description>Einstellung Heizkennlinie Steigung</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Temperatur_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Einstellung Temperatur Warmwasser</label>
+		<description>Einstellung Temperatur Warmwasser</description>
+		<state pattern="%.1f" readOnly="false" max="60" min="30" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Temperatur_Warmwasser_Soll2">
+		<item-type>Number</item-type>
+		<label>Einstellung Temperatur Warmwasser Sollwert 2</label>
+		<description>Einstellung Temperatur Warmwasser Sollwert 2</description>
+		<state pattern="%.1f" readOnly="false" max="60" min="30" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Anforderung_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Einstellung Anforderung Warmwasser 1x</label>
+		<description>Einstellung Anforderung Warmwasser 1x</description>
+		<state pattern="%d" readOnly="false" max="2" min="0" step="1"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Hysterese_Speicher_Heizung">
+		<item-type>Number</item-type>
+		<label>Einstellung Hysterese Speicher Heizung</label>
+		<description>Einstellung Hysterese Speicher Heizung</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einstellung_Hysterese_Speicher_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Einstellung Hysterese Speicher Warmwasser</label>
+		<description>Einstellung Hysterese Speicher Warmwasser</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Speicher_Heizung">
+		<item-type>Number</item-type>
+		<label>Temperatur Speicher Heizung</label>
+		<description>Temperatur Speicher Heizung</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Externer_Warmeerzeuger">
+		<item-type>Number</item-type>
+		<label>Temperatur Externer Wärmeerzeuger</label>
+		<description>Temperatur Externer Wärmeerzeuger</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Speicher_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Temperatur Speicher Warmwasser</label>
+		<description>Temperatur Speicher Warmwasser</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Verdampfer">
+		<item-type>Number</item-type>
+		<label>Temperatur Verdampfer</label>
+		<description>Temperatur Verdampfer</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Vorlauf_Sole">
+		<item-type>Number</item-type>
+		<label>Temperatur Vorlauf Sole</label>
+		<description>Temperatur Vorlauf Sole</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Rucklauf_Sole">
+		<item-type>Number</item-type>
+		<label>Temperatur Rücklauf Sole</label>
+		<description>Temperatur Rücklauf Sole</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Vorlauf_Anlage">
+		<item-type>Number</item-type>
+		<label>Temperatur Vorlauf Anlage</label>
+		<description>Temperatur Vorlauf Anlage</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Vorlauf_Sekundarkreis">
+		<item-type>Number</item-type>
+		<label>Temperatur Vorlauf Sekundärkreis</label>
+		<description>Temperatur Vorlauf Sekundärkreis</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Temperatur_Rucklauf_Sekundarkreis">
+		<item-type>Number</item-type>
+		<label>Temperatur Rücklauf Sekundärkreis</label>
+		<description>Temperatur Rücklauf Sekundärkreis</description>
+		<state pattern="%.1f" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Verdichter">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Verdichter</label>
+		<description>Einschaltungen Verdichter</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Primarquelle">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Primärquelle</label>
+		<description>Einschaltungen Primärquelle</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Sekundarquelle">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Sekundärquelle</label>
+		<description>Einschaltungen Sekundärquelle</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_EHeizung_Stufe_1">
+		<item-type>Number</item-type>
+		<label>Einschaltungen E-Heizung Stufe 1</label>
+		<description>Einschaltungen E-Heizung Stufe 1</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_EHeizung_Stufe_2">
+		<item-type>Number</item-type>
+		<label>Einschaltungen E-Heizung Stufe 2</label>
+		<description>Einschaltungen E-Heizung Stufe 2</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Heizkreis">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Heizkreis</label>
+		<description>Einschaltungen Heizkreis</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Sammelmeldung">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Sammelmeldung</label>
+		<description>Einschaltungen Sammelmeldung</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Umschaltventil_Heizen_WW">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Umschaltventil Heizen/WW</label>
+		<description>Einschaltungen Umschaltventil Heizen/WW</description>
+		<state pattern="%d" readOnly="true"/>
+	</channel-type>
+
+	<channel-type id="Einschaltungen_Ladepumpe_Speicher_Warmwasser">
+		<item-type>Number</item-type>
+		<label>Einschaltungen Ladepumpe Speicher Warmwasser</label>
+		<description>Einschaltungen Ladepumpe Speicher Warmwasser</description>
+		<state pattern="%d" readOnly="true"/>
 	</channel-type>
 
 	<!-- Channel Types for Pellet Burner -->
